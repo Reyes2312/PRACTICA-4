@@ -5,6 +5,11 @@ app = Flask(__name__)
 # Define una ruta (URL) para la página principal "/"
 @app.route('/')
 def hola_mundo():
+ 
+ #segunda 
+ @app.route('/dashboard')
+ def dashboard():
+    return 'Dashboard de usuario - En construcción'
 # Lo que se devuelve aquí se mostrará en el navegador
  return '¡Hola! Mi pipeline de DevOps funciona correctamente.'
 # Verifica si este archivo es el programa principal que se está ejecutando
